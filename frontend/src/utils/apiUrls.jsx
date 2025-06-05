@@ -1,0 +1,2 @@
+export const url = "https://retoolapi.dev/BuJvOm/productos";
+

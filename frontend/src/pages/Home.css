@@ -1,0 +1,122 @@
+
+.product-list-container {
+  background: linear-gradient(to right, #a7c5eb, #f7c8d1);
+  min-height: 100vh;
+  width: 100%;
+  padding: 3rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+
+.product-list-content {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+
+.product-list-add-btn {
+  display: block;
+  text-align: center;
+  background-color: #a7c5eb;
+  color: #333;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  margin-bottom: 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.product-list-add-btn:hover {
+  background-color: #91b4e2;
+}
+
+
+.product-list-title {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.product-table thead {
+  background-color: #f2f2f2;
+}
+
+.product-table th,
+.product-table td {
+  padding: 0.75rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.product-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.product-table th {
+  font-weight: bold;
+  color: #555;
+}
+
+
+.product-action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.product-action-buttons button {
+  padding: 0.4rem 1rem;
+  font-size: 0.9rem;
+  border-radius: 0.4rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-action-buttons button:first-child {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.product-action-buttons button:last-child {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.product-action-buttons button:hover:first-child {
+  background-color: #45a049;
+}
+
+.product-action-buttons button:hover:last-child {
+  background-color: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .product-list-content {
+    padding: 1.5rem;
+  }
+
+  .product-table th,
+  .product-table td {
+    padding: 0.5rem;
+  }
+
+  .product-list-title {
+    font-size: 1.5rem;
+  }
+}

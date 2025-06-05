@@ -1,0 +1,81 @@
+/* Eliminar margenes y paddings predeterminados */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Esto asegura que el padding y el borde no afecten el tamaño total */
+  }
+  
+  /* Asegurar que html y body ocupen toda la pantalla */
+  html, body {
+    height: 100%;  /* Asegura que ocupen toda la altura de la pantalla */
+    width: 100%;   /* Asegura que ocupen todo el ancho de la pantalla */
+  }
+  
+  /* Contenedor principal para centrar todo */
+  .welcome-container {
+    background: linear-gradient(to right, #a7c5eb, #f7c8d1); /* Degradado de fondo */
+    min-height: 100vh; /* Asegura que el fondo cubra toda la altura de la pantalla */
+    min-width: 100vw;  /* Asegura que el fondo cubra toda la anchura de la pantalla */
+    display: flex;
+    align-items: center;   /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Estilo de la tarjeta de contenido */
+  .card {
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 28rem;
+    width: 100%;
+    text-align: center;
+    margin-top: 5rem; /* Espacio superior para centrar mejor */
+    padding-bottom: 2rem; /* Agregado para mantener el espaciado en la parte inferior */
+  }
+  
+  /* Estilo solo para el título (TecnoMarket) */
+  .card .titulo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white; /* Texto blanco para el título */
+    margin-bottom: 1.5rem; /* Separar un poco más el título del texto */
+    text-align: right; /* Alinea el texto a la derecha */
+    width: 100%; /* Asegura que el texto ocupe todo el ancho disponible */
+    padding-right: 1rem; /* Agrega un pequeño padding a la derecha si es necesario */
+  }
+  
+  /* Estilo para el texto debajo del título */
+  .card p {
+    font-size: 1.2rem;
+    color: #555555;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Media Queries para hacer el diseño responsive */
+  @media (max-width: 768px) {
+    .card {
+      padding: 1.5rem;
+      max-width: 90%; /* Ajusta la tarjeta en pantallas más pequeñas */
+    }
+  
+    .card .titulo {
+      font-size: 2rem; /* Ajusta el tamaño del título en pantallas pequeñas */
+    }
+  
+    .card p {
+      font-size: 1rem; /* Reduce el tamaño del texto en pantallas pequeñas */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card .titulo {
+      font-size: 1.8rem; /* Aún más pequeño en dispositivos muy pequeños */
+    }
+  
+    .button {
+      padding: 0.6rem 1.5rem; /* Botón más pequeño en pantallas muy pequeñas */
+    }
+  }
+  

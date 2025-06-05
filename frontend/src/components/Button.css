@@ -1,0 +1,23 @@
+/* Button.css */
+.button {
+    padding: 0.8rem 2rem;
+    font-weight: bold;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 1rem;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Degradado atractivo */
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .button:hover {
+    transform: scale(1.05); /* Efecto de escala al hacer hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .button:focus {
+    outline: none;
+  }
+  
