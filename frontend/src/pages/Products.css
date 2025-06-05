@@ -1,0 +1,60 @@
+.products-container {
+  background: linear-gradient(to right, #a7c5eb, #f7c8d1);
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.products-form {
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  width: 100%;
+  max-width: 700px;
+}
+
+
+.products-form h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+
+.products-form .button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1.5rem;
+}
+
+.products-form .button:hover {
+  background-color: #45a049;
+}
+
+
+@media (max-width: 768px) {
+  .products-form {
+    padding: 1.5rem;
+  }
+
+  .products-form h2 {
+    font-size: 1.5rem;
+  }
+
+  .products-form .button {
+    width: 100%;
+  }
+}
