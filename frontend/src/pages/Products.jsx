@@ -1,11 +1,11 @@
-import { Link } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import Titulo from "../components/Titulos";
 import Button from "../components/Button";
-import { optionSelect } from "../utils/apiUrls";
+import InputText from "../components/InputText";
 import useDataProduct from "../hooks/Products/userFetchproducts";
-import { useParams } from "react-router-dom";
 import { useForm } from "react-hook-form";
-import "../pages/Products.css"; 
+import "../pages/Products.css";
+
 const Products = () => {
   const { id } = useParams();
   const methods = useForm();
@@ -24,14 +24,6 @@ const Products = () => {
             placeholder="Enter product name"
             register={register}
             error={errors.producto?.message}
-          />
-
-          <SelectInput
-            label="Category"
-            name="categoria"
-            options={optionSelect}
-            register={register}
-            error={errors.categoria?.message}
           />
 
           <InputText
